@@ -1,14 +1,21 @@
-package psy.boardgames.chess;
+package psy.boardgames.chess.set;
+
+import org.bukkit.entity.LivingEntity;
+
+import psy.boardgames.chess.ChessBoard;
 
 public abstract class ChessPiece{
 	protected final ChessBoard board;
 	//false=player1, true=player2
 	protected final boolean player;
 	protected int rank, file;
+	//The mob representing the piece
+	protected LivingEntity mob;
 	
-	public ChessPiece(ChessBoard board, boolean player, int rank, int file){
+	public ChessPiece(ChessBoard board, boolean player, LivingEntity mob, int rank, int file){
 		this.board = board;
 		this.player = player;
+		this.mob = mob;
 		this.rank = rank;
 		this.file = file;
 	}

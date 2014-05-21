@@ -1,12 +1,16 @@
-package psy.boardgames.chess;
+package psy.boardgames.chess.set;
+
+import org.bukkit.entity.LivingEntity;
+
+import psy.boardgames.chess.ChessBoard;
 
 public class Pawn extends ChessPiece{
 	private boolean hasMoved;
 	private boolean toBePromoted;
 	
 	
-	public Pawn(ChessBoard board, boolean player, int rank, int file){
-		super(board, player, rank, file);
+	public Pawn(ChessBoard board, boolean player, LivingEntity mob, int rank, int file){
+		super(board, player, mob, rank, file);
 		this.hasMoved = false;
 		this.toBePromoted = false;
 	}
@@ -108,13 +112,13 @@ public class Pawn extends ChessPiece{
 	public boolean Promote(String pieceName){
 		ChessPiece newPiece;
 		if(pieceName.equalsIgnoreCase("rook"))
-			newPiece = new Rook(board, player, rank, file);
+			newPiece = new Rook(board, player, mob, rank, file);
 		else if(pieceName.equalsIgnoreCase("knight"))
-			newPiece = new Knight(board, player, rank, file);
+			newPiece = new Knight(board, player, mob, rank, file);
 		else if(pieceName.equalsIgnoreCase("bishop"))
-			newPiece = new Bishop(board, player, rank, file);
+			newPiece = new Bishop(board, player, mob, rank, file);
 		else if(pieceName.equalsIgnoreCase("queen"))
-			newPiece = new Queen(board, player, rank, file);
+			newPiece = new Queen(board, player, mob, rank, file);
 		else
 			return false;
 		board.setSquare(rank, file, newPiece);

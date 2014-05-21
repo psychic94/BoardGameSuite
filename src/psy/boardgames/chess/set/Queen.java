@@ -1,9 +1,13 @@
-package psy.boardgames.chess;
+package psy.boardgames.chess.set;
+
+import org.bukkit.entity.LivingEntity;
+
+import psy.boardgames.chess.ChessBoard;
 
 public class Queen extends ChessPiece{
 
-	public Queen(ChessBoard board, boolean player, int rank, int file){
-		super(board, player, rank, file);
+	public Queen(ChessBoard board, boolean player, LivingEntity mob, int rank, int file){
+		super(board, player, mob, rank, file);
 	}
 
 	public boolean move(int newRank, int newFile){
