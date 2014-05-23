@@ -1,0 +1,51 @@
+#Valid mob values are:
+#Creeper, Skeleton, Spider, Zombie, Slime, Ghast,
+#PigZombie, Enderman, CaveSpider, Silverfish, Blaze,
+#LavaSlime, Bat, Witch, Pig, Sheep, Cow, Chicken,
+#Squid, Wolf, MushroomCow, SnowMan, Ozelot
+#VillagerGolem, EntityHorse, and Villager
+#Details are used to set mob-specific info such as color
+#For a list of all possible tags, go here:
+#http://minecraft.gamepedia.com/Chunk_format#Mobs
+playerA:
+    pawn:
+        entity: 'Slime'
+        head: 0
+        body: 0
+        legs: 0
+        feet: 0
+        hand: 0
+        details:
+            - 'Size:0'
+    king:
+        entity: 'Slime'
+        head: 0
+        body: 0
+        legs: 0
+        feet: 0
+        hand: 0
+        details:
+            - 'Size:1'
+            - 'CustomName:|\/\/|'
+            - 'CustomNameVisible:1'
+playerB:
+    pawn:
+        entity: 'LavaSlime'
+        head: 0
+        body: 0
+        legs: 0
+        feet: 0
+        hand: 0
+        details:
+            - 'Size:0'
+    king:
+        entity: 'LavaSlime'
+        head: 0
+        body: 0
+        legs: 0
+        feet: 0
+        hand: 0
+        details:
+            - 'Size:1'
+            - 'CustomName:|\/\/|'
+            - 'CustomNameVisible:1'

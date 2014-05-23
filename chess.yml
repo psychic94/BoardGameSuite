@@ -1,0 +1,121 @@
+#Valid mob values are:
+#Creeper, Skeleton, Spider, Zombie, Slime, Ghast,
+#PigZombie, Enderman, CaveSpider, Silverfish, Blaze,
+#LavaSlime, Bat, Witch, Pig, Sheep, Cow, Chicken,
+#Squid, Wolf, MushroomCow, SnowMan, Ozelot
+#VillagerGolem, EntityHorse, and Villager
+#Details are used to set mob-specific info such as color
+#For a list of all possible tags, go here:
+#http://minecraft.gamepedia.com/Chunk_format#Mobs
+playerA:
+    #A generic villager (green robe)
+    pawn: 
+        entity: 'Villager'
+        head: 0
+        body: 0
+        legs: 0
+        feet: 0
+        hand: 0
+        details:
+            - 'Profession:5'
+    rook:
+        entity: 'VillagerGolem'
+        head: 0
+        body: 0
+        legs: 0
+        feet: 0
+        hand: 0
+        details: null
+    #A solid white horse
+    knight: 
+        entity: 'EntityHorse'
+        head: 0
+        body: 0
+        legs: 0
+        feet: 0
+        hand: 0
+        details:
+            - 'Variant:0'
+    #A priest (purple robe)
+    bishop:
+        entity: 'Villager'
+        head: 0
+        body: 0
+        legs: 0
+        feet: 0
+        hand: 0
+        details:
+            - 'Profession:2'
+    queen:
+        entity: 'Witch'
+        head: 0
+        body: 0
+        legs: 0
+        feet: 0
+        hand: 0
+        details: null
+    #A librarian (white robe)
+    king:
+        entity: Villager
+        head: 0
+        body: 0
+        legs: 0
+        feet: 0
+        hand: 0
+        details:
+            - 'Profession:1'
+playerB:
+    #A zombie with a chainmail helmet
+    pawn:
+        entity: 'Zombie'
+        head: 302
+        body: 0
+        legs: 0
+        feet: 0
+        hand: 0
+        details: null
+    #A wither skeleton
+    rook:
+        entity: 'Skeleton'
+        head: 0
+        body: 0
+        legs: 0
+        feet: 0
+        hand: 0
+        details:
+            - 'SkeletonType:1'
+    #A zombie horse
+    knight:
+        entity: 'EntityHorse'
+        head: 0
+        body: 0
+        legs: 0
+        feet: 0
+        hand: 0
+        details:
+            - 'Type:3'
+    bishop:
+        entity: 'Blaze'
+        head: 0
+        body: 0
+        legs: 0
+        feet: 0
+        hand: 0
+        details: null
+    queen:
+        entity: 'Enderman'
+        head: 0
+        body: 0
+        legs: 0
+        feet: 0
+        hand: 0
+        details: null
+    #A zombie with full gold armor
+    king:
+        entity: 'Zombie'
+        head: 314
+        body: 315
+        legs: 316
+        feet: 417
+        hand: 0
+        details: null

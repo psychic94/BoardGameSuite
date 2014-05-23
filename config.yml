@@ -1,0 +1,13 @@
+general:
+#Planned game
+backgammon:
+    enabled: false
+checkers:
+    enabled: true
+    #"yes" to use rule, "no" to ignore rule
+    #"choose" to let player decide when starting a game
+    mustJump: 'choose'
+chess:
+    enabled: true
+    castling: 'yes'
+    enPassant: 'choose'
