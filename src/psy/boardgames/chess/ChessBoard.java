@@ -1,7 +1,7 @@
 package psy.boardgames.chess;
 
-import com.sk89q.worldedit.LocalWorld;
-import com.sk89q.worldedit.Vector;
+import org.bukkit.Location;
+import org.bukkit.World;
 
 import psy.boardgames.chess.set.Bishop;
 import psy.boardgames.chess.set.ChessPiece;
@@ -15,10 +15,15 @@ import psy.boardgames.core.GameBoard;
 public class ChessBoard extends GameBoard{
 	ChessPiece[][] pieces;
 
-	public ChessBoard(String name, LocalWorld world, Vector pos1, Vector pos2){
-		super(name, world, pos1, pos2);
+	public ChessBoard(String name, Location loc1, Location loc2){
+		this(name, loc1.getWorld(), loc1, loc2);
 	}
-
+	
+	public ChessBoard(String name, World world, Location loc1, Location loc2){
+		super(name, world, loc1, loc2);
+		// TODO game specific size check (8, 16, or 24 blocks wide)
+	}
+	
 	public void setUp(){
         
 		//Initialize
