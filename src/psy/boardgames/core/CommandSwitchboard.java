@@ -8,11 +8,16 @@ import org.bukkit.command.CommandSender;
 
 public class CommandSwitchboard implements CommandExecutor{
 	private HashMap<String,GameModule> modules;
+	private GameBoardManager boardManager;
+	
+	public CommandSwitchboard(){
+		// TODO
+	}
 	
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args){
 		if(args[0].equalsIgnoreCase("board")){
-			// TODO send to a board creation or deletion method
+			boardManager.runCommand(sender, command, label, args);
 		}else{
 			modules.get(args[0]).runCommand(sender, command, label, args);
 		}
