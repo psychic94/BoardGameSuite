@@ -25,7 +25,6 @@ public class ChessBoard extends GameBoard{
 	}
 	
 	public void setUp(){
-        
 		//Initialize
 		pieces = new ChessPiece[8][8];
 		
@@ -62,6 +61,10 @@ public class ChessBoard extends GameBoard{
 			for(int j=0; j<8; j++)
 				pieces[i][j] = null;
 		
+	}
+	
+	public void putAway(){
+		// TODO despawn all entity pieces
 	}
 	
 	public void setSquare(int rank, int file, ChessPiece piece){
